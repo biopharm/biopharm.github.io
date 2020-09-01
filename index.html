@@ -1,0 +1,84 @@
+<html>
+
+<head>
+    <title>Biopharm List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css" integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg=" crossorigin="anonymous" />
+    </head>
+
+<body>
+    <div class="container-fluid">
+        <h1>Biopharm List</h1>
+    <div>
+        <h3>Filters</h3>
+        <table id="filters" style="width: 100%">
+            <tbody>
+                <tr>
+                    <th>Name</th>
+                    <th>Company</th>
+                    <th>Indication</th>
+                    <th>Stage</th>
+                    <th>Sort By</th>
+                </tr>
+                <tr>
+                    <th>
+                        <select id="name" placeholder="Select a name">
+                            <option value="" selected="selected"></option>
+                        </select>
+                    </th>
+                    <th>
+                        <select id="company" placeholder="Select a company">
+                            <option value="" selected="selected"></option>
+                        </select>
+                    </th>
+                    <th>
+                        <select id="indication" placeholder="Select an indication">
+                            <option value="" selected="selected"></option>
+                        </select>
+                    </th>
+                    <th>
+                        <select id="stage" placeholder="Select a stage">
+                            <option value="" selected="selected"></option>
+                        </select>
+                    </th>
+                    <th>
+                        <select id="sort">
+                            <option value="c">Company</option>
+                            <option value="p">Phase</option>
+                            <option value="po">Phase - Opposite</option>
+                            <option value="n">Name</option>
+                            <option value="i">Indication</option>
+                        </select>
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <a href="javascript:filter()" class="btn btn-primary">Apply Filters</a>
+    </div>
+    <table id="list" style="width: 100%; margin-top: 10px">
+        <tbody>
+            <tr>
+                <th>Name</th>
+                <th>Company</th>
+                <th>Indication</th>
+                <th>Stage</th>
+                <th>News Link</th>
+            </tr>
+        </tbody>
+    </table>
+
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"
+        integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js" integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="output.json"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
