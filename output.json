@@ -1,12 +1,20 @@
 var data = `[
   {
+    "newstxt": "Phase 3 open-label, randomized, controlled trial is underway - noted July 30, 2020.", 
+    "name": "ULTOMIRIS (ravulizumab-cwvz)", 
+    "company": "Alexion Pharmaceuticals Inc.", 
+    "newslink": "https://www.businesswire.com/news/home/20200730005199/en/", 
+    "indication": "COVID-19", 
+    "stage": "phase3"
+  }, 
+  {
     "newstxt": "Approval (third indication) announced October 3, 2017. ", 
     "name": "Botox", 
     "company": "AbbVie Inc.", 
     "newslink": "https://www.allergan.com/News/News/Thomson-Reuters/FDA-Approves-BOTOX-Cosmetic-OnabotulinumtoxinA-for", 
     "indication": "Forehead lines", 
     "stage": "approved"
-  }, 
+  },
   {
     "newstxt": "Phase 3 trial did not meet primary endpoint at interim analysis - May 17, 2019.", 
     "name": "Depatuxizumab mafodotin ABT-414", 
@@ -476,7 +484,7 @@ var data = `[
     "name": "Cenicriviroc + Otezla (apremilast) + Firazyr (icatibant)", 
     "company": "AbbVie Inc.", 
     "newslink": "https://www.prnewswire.com/news-releases/members-of-the-covid-rd-alliance-and-quantum-leap-healthcare-collaborative-enroll-first-patients-in-i-spy-covid-trial-301104431.html", 
-    "indication": "COVID-19 (severe)", 
+    "indication": "COVID-19", 
     "stage": "phase2"
   }, 
   {
@@ -1700,7 +1708,7 @@ var data = `[
     "name": "VLP vaccine", 
     "company": "Akers Biosciences Inc.", 
     "newslink": "http://www.akersbio.com/investor-center/news/2020/07-07-2020-140436665", 
-    "indication": "COVID-19 vaccine", 
+    "indication": "COVID-19", 
     "stage": "phase1"
   }, 
   {
@@ -2348,7 +2356,7 @@ var data = `[
     "name": "Intranasal COVID-19 Vaccine", 
     "company": "Altimmune Inc.", 
     "newslink": "http://ir.altimmune.com/news-releases/news-release-details/altimmune-signs-teaming-agreement-dynport-vaccine-company-us", 
-    "indication": "COVID-19 vaccine", 
+    "indication": "COVID-19", 
     "stage": "phase1"
   }, 
   {
@@ -2589,14 +2597,6 @@ var data = `[
     "company": "Alexion Pharmaceuticals Inc.", 
     "newslink": "https://alexionpharmaceuticalsinc.gcs-web.com/news-releases/news-release-details/alexion-reports-first-quarter-2020-results", 
     "indication": "Amyotrophic lateral sclerosis (ALS)", 
-    "stage": "phase3"
-  }, 
-  {
-    "newstxt": "Phase 3 open-label, randomized, controlled trial is underway - noted July 30, 2020.", 
-    "name": "ULTOMIRIS (ravulizumab-cwvz)", 
-    "company": "Alexion Pharmaceuticals Inc.", 
-    "newslink": "https://www.businesswire.com/news/home/20200730005199/en/", 
-    "indication": "COVID-19 Coronavirus", 
     "stage": "phase3"
   }, 
   {
@@ -3012,7 +3012,7 @@ var data = `[
     "name": "Cenicriviroc + Otezla (apremilast) + Firazyr (icatibant)", 
     "company": "Amgen Inc.", 
     "newslink": "https://www.prnewswire.com/news-releases/members-of-the-covid-rd-alliance-and-quantum-leap-healthcare-collaborative-enroll-first-patients-in-i-spy-covid-trial-301104431.html", 
-    "indication": "COVID-19 (severe)", 
+    "indication": "COVID-19", 
     "stage": "phase2"
   }, 
   {
@@ -3564,7 +3564,7 @@ var data = `[
     "name": "LUNAR-COV19", 
     "company": "Arcturus Therapeutics Holdings Inc.", 
     "newslink": "https://ir.arcturusrx.com/news-releases/news-release-details/arcturus-therapeutics-announces-it-has-initiated-dosing-its", 
-    "indication": "COVID-19 vaccine", 
+    "indication": "COVID-19", 
     "stage": "phase1"
   }, 
   {
@@ -5468,7 +5468,7 @@ var data = `[
     "name": "AZD1222 (ChAdOx1 nCoV-19)", 
     "company": "Astrazeneca PLC", 
     "newslink": "https://ca.news.yahoo.com/coronavirus-oxford-university-vaccine-protection-says-drugmaker-104300502.html", 
-    "indication": "COVID-19 vaccine", 
+    "indication": "COVID-19", 
     "stage": "phase3"
   }, 
   {
@@ -6204,7 +6204,7 @@ var data = `[
     "name": "Vazegepant", 
     "company": "Biohaven Pharmaceutical Holding Company Ltd.", 
     "newslink": "https://www.biohavenpharma.com/investors/news-events/press-releases/04-09-2020", 
-    "indication": "COVID-19 Coronavirus associated pulmonary complications", 
+    "indication": "COVID-19 associated pulmonary complications", 
     "stage": "phase2"
   }, 
   {
@@ -7324,7 +7324,7 @@ var data = `[
     "name": "BNT162b2", 
     "company": "BioNTech SE", 
     "newslink": "https://biontechse.gcs-web.com/news-releases/news-release-details/biontech-announces-second-quarter-2020-financial-results-and", 
-    "indication": "COVID-19 vaccine", 
+    "indication": "COVID-19", 
     "stage": "phase23"
   }, 
   {
@@ -9281,7 +9281,7 @@ var data = `[
   }, 
   {
     "newstxt": "Phase 1 data due 4Q 2020.", 
-    "name": "COVID-19 vaccine", 
+    "name": "COVID-19", 
     "company": "CureVac N.V.", 
     "newslink": "https://www.sec.gov/Archives/edgar/data/1809122/000110465920086354/tm2016252-11_f1.htm", 
     "indication": "COVID-19", 
@@ -9916,7 +9916,7 @@ var data = `[
     "name": "SCB-2019 + adjuvant system (Clover)", 
     "company": "Dynavax Technologies Corporation", 
     "newslink": "https://investors.dynavax.com/news-releases/news-release-details/dynavax-announces-second-quarter-2020-financial-results", 
-    "indication": "COVID-19 vaccine", 
+    "indication": "COVID-19", 
     "stage": "phase1"
   }, 
   {
@@ -9924,7 +9924,7 @@ var data = `[
     "name": "CpG 1018 and Medicago candidate", 
     "company": "Dynavax Technologies Corporation", 
     "newslink": "https://investors.dynavax.com/news-releases/news-release-details/dynavax-announces-second-quarter-2020-financial-results", 
-    "indication": "COVID-19 vaccine", 
+    "indication": "COVID-19", 
     "stage": "phase1"
   }, 
   {
@@ -11820,7 +11820,7 @@ var data = `[
     "name": "Remdesivir", 
     "company": "Gilead Sciences Inc.", 
     "newslink": "http://investors.gilead.com/news-releases/news-release-details/gilead-submits-new-drug-application-us-food-and-drug-6", 
-    "indication": "COVID-19 Coronavirus", 
+    "indication": "COVID-19", 
     "stage": "ndaFiling"
   }, 
   {
@@ -12652,15 +12652,15 @@ var data = `[
     "name": "VIR-7831", 
     "company": "GlaxoSmithKline PLC", 
     "newslink": "https://investors.vir.bio/news-releases/news-release-details/vir-biotechnology-provides-corporate-update-and-reports-second", 
-    "indication": "COVID-19 antibody", 
+    "indication": "COVID-19", 
     "stage": "phase23"
   }, 
   {
     "newstxt": "Phase 1/2 trial to commence September 2020. Late-stage trial to commence late-2020.", 
-    "name": "Adjuvanted COVID-19 vaccine", 
+    "name": "Adjuvanted COVID-19", 
     "company": "GlaxoSmithKline PLC", 
     "newslink": "https://ml-eu.globenewswire.com/Resource/Download/be5b0ad8-3ef0-44bf-a675-5910a95435c9", 
-    "indication": "COVID-19 vaccine", 
+    "indication": "COVID-19", 
     "stage": "phase1.5"
   }, 
   {
@@ -12676,7 +12676,7 @@ var data = `[
     "name": "SCB-2019 + adjuvant system (Clover)", 
     "company": "GlaxoSmithKline PLC", 
     "newslink": "https://investors.dynavax.com/news-releases/news-release-details/dynavax-announces-second-quarter-2020-financial-results", 
-    "indication": "COVID-19 vaccine", 
+    "indication": "COVID-19", 
     "stage": "phase1"
   }, 
   {
@@ -13196,7 +13196,7 @@ var data = `[
     "name": "COVID vaccine", 
     "company": "Heat Biologics Inc.", 
     "newslink": "https://www.heatbio.com/news-media/news-releases/detail/668/heat-biologics-provides-second-quarter-2020-business-update", 
-    "indication": "COVID-19 vaccine", 
+    "indication": "COVID-19", 
     "stage": "phase1"
   }, 
   {
@@ -13812,7 +13812,7 @@ var data = `[
     "name": "DPX-COVID-19", 
     "company": "IMV Inc.", 
     "newslink": "https://www.businesswire.com/news/home/20200714005370/en/", 
-    "indication": "COVID-19 vaccine", 
+    "indication": "COVID-19", 
     "stage": "phase1"
   }, 
   {
@@ -14372,7 +14372,7 @@ var data = `[
     "name": "INO-4800", 
     "company": "Inovio Pharmaceuticals Inc.", 
     "newslink": "http://ir.inovio.com/news-releases/news-releases-details/2020/INOVIO-Announces-Positive-Interim-Phase-1-Data-For-INO-4800-Vaccine-for-COVID-19/default.aspx", 
-    "indication": "COVID-19 vaccine", 
+    "indication": "COVID-19", 
     "stage": "phase1"
   }, 
   {
@@ -14868,7 +14868,7 @@ var data = `[
     "name": "IFX-1", 
     "company": "Iterum Therapeutics plc", 
     "newslink": "https://bit.ly/3dMlT0G", 
-    "indication": "COVID-19 Coronavirus", 
+    "indication": "COVID-19", 
     "stage": "phase2"
   }, 
   {
@@ -15436,7 +15436,7 @@ var data = `[
     "name": "Ad26.COV2-S", 
     "company": "Johnson & Johnson", 
     "newslink": "https://www.prnewswire.com/news-releases/single-dose-of-johnson--johnson-covid-19-vaccine-candidate-demonstrates-robust-protection-in-pre-clinical-studies-301102880.html", 
-    "indication": "COVID-19 vaccine", 
+    "indication": "COVID-19", 
     "stage": "phase1.5"
   }, 
   {
@@ -15820,7 +15820,7 @@ var data = `[
     "name": "Selinexor", 
     "company": "Karyopharm Therapeutics Inc.", 
     "newslink": "https://investors.karyopharm.com/news-releases/news-release-details/karyopharm-reports-second-quarter-2020-financial-results-and", 
-    "indication": "COVID-19 Coronavirus", 
+    "indication": "COVID-19", 
     "stage": "phase2"
   }, 
   {
@@ -16828,7 +16828,7 @@ var data = `[
     "name": "JS016", 
     "company": "Eli Lilly and Company", 
     "newslink": "https://investor.lilly.com/news-releases/news-release-details/lilly-announces-start-phase-1-study-its-second-potential-covid", 
-    "indication": "COVID-19 antibody", 
+    "indication": "COVID-19", 
     "stage": "phase1"
   }, 
   {
@@ -17969,10 +17969,10 @@ var data = `[
   }, 
   {
     "newstxt": "Clinical trials planned. No timeline provided.", 
-    "name": "COVID-19 vaccine using BC-PIV", 
+    "name": "COVID-19 using BC-PIV", 
     "company": "MediciNova Inc.", 
     "newslink": "https://www.globenewswire.com/news-release/2020/07/27/2067757/0/en/MediciNova-Announces-SARS-CoV-2-Vaccine-Joint-Development-with-BioComo-and-Mie-University-Japan.html", 
-    "indication": "COVID-19 vaccine", 
+    "indication": "COVID-19", 
     "stage": "phase1"
   }, 
   {
@@ -18772,7 +18772,7 @@ var data = `[
     "name": "V591 (Themis)", 
     "company": "Merck & Company Inc. (new)", 
     "newslink": "https://s21.q4cdn.com/488056881/files/doc_financials/2020/q2/MRK-2Q20-Earnings-Deck-Final.pdf", 
-    "indication": "COVID-19 vaccine", 
+    "indication": "COVID-19", 
     "stage": "phase1"
   }, 
   {
@@ -18780,7 +18780,7 @@ var data = `[
     "name": "V590 (IAVI)", 
     "company": "Merck & Company Inc. (new)", 
     "newslink": "https://s21.q4cdn.com/488056881/files/doc_financials/2020/q2/MRK-2Q20-Earnings-Deck-Final.pdf", 
-    "indication": "COVID-19 vaccine", 
+    "indication": "COVID-19", 
     "stage": "phase1"
   }, 
   {
@@ -18980,7 +18980,7 @@ var data = `[
     "name": "mRNA-1273", 
     "company": "Moderna Inc.", 
     "newslink": "https://www.businesswire.com/news/home/20200727005336/en/", 
-    "indication": "COVID-19 vaccine ", 
+    "indication": "COVID-19 ", 
     "stage": "phase23"
   }, 
   {
@@ -20140,7 +20140,7 @@ var data = `[
     "name": "NVX-CoV2373", 
     "company": "Novavax Inc.", 
     "newslink": "https://www.globenewswire.com/news-release/2020/08/24/2082652/0/en/Novavax-Initiates-Phase-2-Portion-of-Phase-1-2-Clinical-Trial-of-COVID-19-Vaccine.html", 
-    "indication": "COVID-19 vaccine", 
+    "indication": "COVID-19", 
     "stage": "phase2"
   }, 
   {
@@ -21036,7 +21036,7 @@ var data = `[
     "name": "TerraCoV2", 
     "company": "Oragenics Inc.", 
     "newslink": "https://www.businesswire.com/news/home/20200710005092/en/", 
-    "indication": "COVID-19 vaccine", 
+    "indication": "COVID-19", 
     "stage": "phase1"
   }, 
   {
@@ -22244,7 +22244,7 @@ var data = `[
     "name": "BNT162b2", 
     "company": "Pfizer Inc.", 
     "newslink": "https://biontechse.gcs-web.com/news-releases/news-release-details/biontech-announces-second-quarter-2020-financial-results-and", 
-    "indication": "COVID-19 vaccine", 
+    "indication": "COVID-19", 
     "stage": "phase23"
   }, 
   {
@@ -22252,7 +22252,7 @@ var data = `[
     "name": "Protease inhibitor against SARS-CoV-2", 
     "company": "Pfizer Inc.", 
     "newslink": "https://www.businesswire.com/news/home/20200409005408/en", 
-    "indication": "COVID-19 Coronavirus", 
+    "indication": "COVID-19", 
     "stage": "phase1"
   }, 
   {
@@ -23676,7 +23676,7 @@ var data = `[
     "name": "Kevzara (Sarilumab)", 
     "company": "Regeneron Pharmaceuticals Inc.", 
     "newslink": "https://www.prnewswire.com/news-releases/regeneron-and-sanofi-provide-update-on-kevzara-sarilumab-phase-3-us-trial-in-covid-19-patients-301087849.html", 
-    "indication": "Coronavirus COVID-19", 
+    "indication": "COVID-19", 
     "stage": "phase3"
   }, 
   {
@@ -23692,7 +23692,7 @@ var data = `[
     "name": "Kevzara (sarilumab)", 
     "company": "Regeneron Pharmaceuticals Inc.", 
     "newslink": "https://ml-eu.globenewswire.com/Resource/Download/3d08626a-f292-4360-a19d-d4146b497daf", 
-    "indication": "Coronavirus COVID-19", 
+    "indication": "COVID-19", 
     "stage": "phase23"
   }, 
   {
@@ -24300,7 +24300,7 @@ var data = `[
     "name": "Actemra (COVACTA)", 
     "company": "Roche Holding Ltd ADR (Sponsored)", 
     "newslink": "https://www.businesswire.com/news/home/20200728006091/en/", 
-    "indication": "Coronavirus COVID-19", 
+    "indication": "COVID-19", 
     "stage": "phase3"
   }, 
   {
@@ -25380,7 +25380,7 @@ var data = `[
     "name": "CiVax", 
     "company": "Soligenix Inc.", 
     "newslink": "https://www.prnewswire.com/news-releases/soligenix-announces-publication-of-positive-pre-clinical-results-for-a-novel-covid-19-vaccine-301100798.html", 
-    "indication": "COVID-19 vaccine", 
+    "indication": "COVID-19", 
     "stage": "phase1"
   }, 
   {
@@ -25660,7 +25660,7 @@ var data = `[
     "name": "Kevzara (Sarilumab)", 
     "company": "Sanofi", 
     "newslink": "https://www.prnewswire.com/news-releases/regeneron-and-sanofi-provide-update-on-kevzara-sarilumab-phase-3-us-trial-in-covid-19-patients-301087849.html", 
-    "indication": "Coronavirus COVID-19", 
+    "indication": "COVID-19", 
     "stage": "phase3"
   }, 
   {
@@ -25668,7 +25668,7 @@ var data = `[
     "name": "mRNA vaccine", 
     "company": "Sanofi", 
     "newslink": "https://ml-eu.globenewswire.com/Resource/Download/e11990e5-50b5-461a-996a-1a76ea8233ad", 
-    "indication": "COVID-19 vaccine", 
+    "indication": "COVID-19", 
     "stage": "phase1b"
   }, 
   {
@@ -25676,15 +25676,15 @@ var data = `[
     "name": "Kevzara (sarilumab)", 
     "company": "Sanofi", 
     "newslink": "https://ml-eu.globenewswire.com/Resource/Download/3d08626a-f292-4360-a19d-d4146b497daf", 
-    "indication": "Coronavirus COVID-19", 
+    "indication": "COVID-19", 
     "stage": "phase23"
   }, 
   {
     "newstxt": "Phase 1/2 trial to commence September 2020. Late-stage trial to commence late-2020.", 
-    "name": "Adjuvanted COVID-19 vaccine", 
+    "name": "Adjuvanted COVID-19", 
     "company": "Sanofi", 
     "newslink": "https://ml-eu.globenewswire.com/Resource/Download/be5b0ad8-3ef0-44bf-a675-5910a95435c9", 
-    "indication": "COVID-19 vaccine", 
+    "indication": "COVID-19", 
     "stage": "phase1.5"
   }, 
   {
@@ -25916,7 +25916,7 @@ var data = `[
     "name": "STI-4398", 
     "company": "Sorrento Therapeutics Inc.", 
     "newslink": "https://www.globenewswire.com/news-release/2020/03/20/2003957/0/en/SORRENTO-DEVELOPS-STI-4398-COVIDTRAP-PROTEIN-FOR-POTENTIAL-PREVENTION-AND-TREATMENT-OF-SARS-COV-2-CORONAVIRUS-DISEASE-COVID-19.html", 
-    "indication": "Coronavirus COVID-19", 
+    "indication": "COVID-19", 
     "stage": "phase1"
   }, 
   {
@@ -25924,7 +25924,7 @@ var data = `[
     "name": "CYNK-001", 
     "company": "Sorrento Therapeutics Inc.", 
     "newslink": "http://investors.sorrentotherapeutics.com/news-releases/news-release-details/sorrento-provide-manufacturing-support-celularity-cynk-001-nk", 
-    "indication": "COVID-19 Coronavirus", 
+    "indication": "COVID-19", 
     "stage": "phase1.5"
   }, 
   {
@@ -26249,10 +26249,10 @@ var data = `[
   }, 
   {
     "newstxt": "Phase 1/2 preliminary data noted neutralizing antibody seroconversion rate above 90% - June 13, 2020. Phase 2 trial to be completed at the end of 2020.", 
-    "name": "COVID-19 vaccine", 
+    "name": "COVID-19", 
     "company": "Sinovac Biotech Ltd.", 
     "newslink": "https://www.businesswire.com/news/home/20200630005615/en/", 
-    "indication": "COVID-19 vaccine", 
+    "indication": "COVID-19", 
     "stage": "phase2"
   }, 
   {
@@ -26660,7 +26660,7 @@ var data = `[
     "name": "Cenicriviroc + Otezla (apremilast) + Firazyr (icatibant)", 
     "company": "Takeda Pharmaceutical Company Limited American Depositary Shares (each representing 1/2 of a share of)", 
     "newslink": "https://www.prnewswire.com/news-releases/members-of-the-covid-rd-alliance-and-quantum-leap-healthcare-collaborative-enroll-first-patients-in-i-spy-covid-trial-301104431.html", 
-    "indication": "COVID-19 (severe)", 
+    "indication": "COVID-19", 
     "stage": "phase2"
   }, 
   {
@@ -26700,7 +26700,7 @@ var data = `[
     "name": "mRNA vaccine", 
     "company": "Translate Bio Inc.", 
     "newslink": "https://ml-eu.globenewswire.com/Resource/Download/e11990e5-50b5-461a-996a-1a76ea8233ad", 
-    "indication": "COVID-19 vaccine", 
+    "indication": "COVID-19", 
     "stage": "phase1b"
   }, 
   {
@@ -27172,7 +27172,7 @@ var data = `[
     "name": "TZLS-501", 
     "company": "Tiziana Life Sciences plc", 
     "newslink": "https://www.tizianalifesciences.com/news-item?s=2020-03-11-tiziana-life-sciences-plc-to-expedite-development-of-its-fully-human-anti-interleukin-6-receptor-monoclonal-antibody-a-potential-treatment-of-certain-patients-infected-with-coronavirus-covid-19", 
-    "indication": "Coronavirus COVID-19", 
+    "indication": "COVID-19", 
     "stage": "phase1"
   }, 
   {
@@ -27748,7 +27748,7 @@ var data = `[
     "name": "VBI-2900", 
     "company": "VBI Vaccines Inc.", 
     "newslink": "https://www.vbivaccines.com/wire/canadian-govt-coronavirus-award/", 
-    "indication": "COVID-19 vaccine", 
+    "indication": "COVID-19", 
     "stage": "phase1"
   }, 
   {
@@ -27900,7 +27900,7 @@ var data = `[
     "name": "VERU-111", 
     "company": "Veru Inc.", 
     "newslink": "https://verupharma.com/news/veru-enrolls-first-patient-in-phase-2-clinical-trial-of-novel-drug-veru-111-to-combat-covid-19/", 
-    "indication": "COVID-19 / Severe Acute Respiratory Syndrome", 
+    "indication": "COVID-19", 
     "stage": "phase2"
   }, 
   {
@@ -27964,7 +27964,7 @@ var data = `[
     "name": "VIB7734", 
     "company": "Viela Bio Inc.", 
     "newslink": "https://ir.vielabio.com/news-releases/news-release-details/viela-bio-reports-second-quarter-2020-financial-results-and", 
-    "indication": "COVID-19-Related Acute Lung Injury", 
+    "indication": "COVID-19", 
     "stage": "phase1b"
   }, 
   {
@@ -27988,7 +27988,7 @@ var data = `[
     "name": "VIR-7831", 
     "company": "Vir Biotechnology Inc.", 
     "newslink": "https://investors.vir.bio/news-releases/news-release-details/vir-biotechnology-provides-corporate-update-and-reports-second", 
-    "indication": "COVID-19 antibody", 
+    "indication": "COVID-19", 
     "stage": "phase23"
   }, 
   {
@@ -28512,7 +28512,7 @@ var data = `[
     "stage": "phase2"
   }, 
   {
-    "newstxt": "Phase 2 trial planned. Initiation placed on hold with focus to be placed on COVID-19 vaccine.", 
+    "newstxt": "Phase 2 trial planned. Initiation placed on hold with focus to be placed on COVID-19.", 
     "name": "Norovirus vaccine", 
     "company": "Vaxart Inc.", 
     "newslink": "https://investors.vaxart.com/news-releases/news-release-details/vaxart-announces-fourth-quarter-and-full-year-2019-financial", 

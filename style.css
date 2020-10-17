@@ -1,0 +1,87 @@
+.progress-bar {
+    -webkit-transition: width 1500ms ease !important;
+    transition: width 1500ms ease !important;
+}
+
+.plabel {
+    text-align: center;
+}
+
+.searchbar {
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 60px;
+    background-color: #eeeeee;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.search_input {
+    color: #444444;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color: transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+}
+
+.searchbar:hover>.search_input {
+    padding: 0 10px;
+    width: 450px;
+    caret-color: red;
+    transition: width 0.4s linear;
+}
+
+.searchbar:hover>.search_icon {
+    background: #dddddd;
+    color: #e74c3c;
+}
+
+.search_icon {
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: grey;
+    text-decoration: none;
+}
+
+.card {
+    border: 0 !important;
+}
+
+#pccard {
+    border: none;
+    height: 7px;
+    background-color: #dc3545;
+}
+
+#p1card {
+    border: none;
+    height: 7px;
+    background-color: #ffc107;
+}
+
+#p2card {
+    border: none;
+    height: 7px;
+    background-color: #17a2b8;
+}
+
+#p3card {
+    border: none;
+    height: 7px;
+    background-color: #007bff;
+}
+
+#acard {
+    border: none;
+    height: 7px;
+    background-color: #28a745;
+}
+
