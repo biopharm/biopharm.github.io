@@ -3,6 +3,10 @@
     transition: width 1500ms ease !important;
 }
 
+.progress {
+    border-radius: 10px !important;
+}
+
 .plabel {
     text-align: center;
 }
