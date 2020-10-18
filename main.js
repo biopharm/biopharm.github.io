@@ -94,7 +94,7 @@ $(document).ready(function () {
         if (!searched[info[i].indication]) {
             full.push(info[i].indication);
             searched[info[i].indication] = true;
-            console.log(info[i].indication);
+            // console.log(info[i].indication);
             indicators[info[i].indication] = [info[i].indication, info[i].newstxt, info[i].newslink, 0, 0, 0, 0, 0];
         }
 
@@ -125,7 +125,97 @@ document.getElementById("indsearch").addEventListener("keydown", function (e) {
     }
 });
 
+function renderInd(name) {
+    document.getElementById("selected").innerHTML = "< " + name;
+
+    document.getElementById("addto").innerHTML = "";
+    var pn = "Current Page: " + (page + 1).toString();
+    document.getElementById("pagen").innerHTML = pn;
+    var vals = [0, 0, 0, 0, 0];
+
+    var cr = 0;
+
+    var sorting = [];
+
+    for (var i = 0; i < info.length; i++) {
+        if (cr > 40) {
+            break;
+        }
+
+        if (info[i].indication == name) {
+            cr++;
+
+            sorting.push(info[i]);
+        }
+    }
+
+    sorting.sort(function(a, b) {
+        return stagesimplify[b.stage] - stagesimplify[a.stage];
+    });
+
+    for (var i = 0; i < Math.min(sorting.length, 40); i++)  {
+        var ind = stagesimplify[sorting[i].stage] - 3;
+
+        vals[ind]++;
+
+        var final = `
+        <br>
+        <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <h5 class="card-title">` + sorting[i].name + `</h5>
+                        <p class="card-text">` + sorting[i].company + `</p>
+                        <button type="button" class="btn btn-sm ` + stylec[ind] + `" data-toggle="tooltip" data-placement="top" title="` + cdesc[ind] + `">
+                        ` + ctext[ind] + `
+                        </button>
+                        <a href="` + sorting[i].newslink + `" class="card-text">` + sorting[i].newstxt + `</a>
+    
+                    </div>
+                </div>
+                <div class="col-md-8 progress-container">
+                    <div class="progress active" style="height: 30px; font-size: 1em; font-weight: bold">
+                        <div class="progress-bar bg-pc" style="width:20%"></div>`
+        
+        if (ind > 0) {
+            final += `<div class="progress-bar bg-p1" style="width:20%"></div>`;
+        }
+
+        if (ind > 1) {
+            final += `<div class="progress-bar bg-p2" style="width:20%"></div>`;
+        }
+
+        if (ind > 2) {
+            final += `<div class="progress-bar bg-p3" style="width:20%"></div>`;
+        }
+
+        if (ind > 3) {
+            final += `<div class="progress-bar bg-a" style="width:20%"></div>`;
+        }
+
+        final += `</div>
+                </div>
+            </div>
+        `;
+    
+        document.getElementById("addto").innerHTML += final;
+    }
+
+    document.getElementById("1v").innerHTML = vals[0];
+    document.getElementById("2v").innerHTML = vals[1];
+    document.getElementById("3v").innerHTML = vals[2];
+    document.getElementById("4v").innerHTML = vals[3];
+    document.getElementById("5v").innerHTML = vals[4];
+
+    var all = document.getElementsByClassName("tot");
+
+    for (var i = 0; i < all.length; i++) {
+        all[i].innerHTML = "Total";
+    }
+
+}
+
 function renderPage() {
+    document.getElementById("selected").innerHTML = "";
     keys = [];
     if (document.getElementById("indsearch").value == "" || document.getElementById("indsearch").value == " ") {
         keys = full;
@@ -267,7 +357,7 @@ function generateRow(name, desc, link, pc, p1, p2, p3, a) {
     <div class="row">
             <div class="col-md-4">
                 <div class="card">
-                    <h5 class="card-title"><a href="#" style="color: #000">` + name + ` ></a></h5>
+                    <h5 class="card-title"><a href="javascript:renderInd('` + name + `')" style="color: #000">` + name + ` ></a></h5>
                     <button type="button" class="btn btn-sm ` + stylec[ind] + `" data-toggle="tooltip" data-placement="top" title="` + cdesc[ind] + `">
                     ` + ctext[ind] + `
                     </button>
