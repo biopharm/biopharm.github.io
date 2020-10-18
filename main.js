@@ -51,6 +51,7 @@ var stagesimplify = {
 
 var indicators = {};
 var keys = [];
+var full = [];
 var searched = {};
 
 var pct = [];
@@ -76,10 +77,8 @@ function prevPage() {
 
 $(document).ready(function () {
     for (var i = 0; i < info.length; i++) {
-        
-
         if (!searched[info[i].indication]) {
-            keys.push(info[i].indication);
+            full.push(info[i].indication);
             searched[info[i].indication] = true;
             console.log(info[i].indication);
             indicators[info[i].indication] = [info[i].indication, info[i].newstxt, info[i].newslink, 0, 0, 0, 0, 0];
@@ -105,7 +104,27 @@ $(document).ready(function () {
 
 });
 
+document.getElementById("indsearch").addEventListener("keydown", function (e) {
+    if (e.key == 'Enter') {
+        renderPage();
+    }
+});
+
 function renderPage() {
+    keys = [];
+    if (document.getElementById("indsearch").value == "" || document.getElementById("indsearch").value == " ") {
+        keys = full;
+    }
+    else {
+        for (var i = 0; i < full.length; i++) {
+            if (full[i].toLowerCase().includes(document.getElementById("indsearch").value.toLowerCase())) {
+                keys.push(full[i]);
+            }
+        }
+    }
+
+
+    document.getElementById("indcount").innerHTML = "Find the latest developments in biopharmaceuticals. Tracking " + keys.length + " indications.";
     document.getElementById("addto").innerHTML = "";
     var pn = "Current Page: " + (page + 1).toString();
     document.getElementById("pagen").innerHTML = pn;
@@ -124,11 +143,11 @@ function renderPage() {
         generateRow(keys[i], tmp[1], tmp[2], tmp[3], tmp[4], tmp[5], tmp[6], tmp[7]);
     }
 
-    document.getElementById("1v").innerHTML = vals[0];
-    document.getElementById("2v").innerHTML = vals[1];
-    document.getElementById("3v").innerHTML = vals[2];
-    document.getElementById("4v").innerHTML = vals[3];
-    document.getElementById("5v").innerHTML = vals[4];
+    // document.getElementById("1v").innerHTML = vals[0];
+    // document.getElementById("2v").innerHTML = vals[1];
+    // document.getElementById("3v").innerHTML = vals[2];
+    // document.getElementById("4v").innerHTML = vals[3];
+    // document.getElementById("5v").innerHTML = vals[4];
  
     for (var i = 0; i < pct.length; i++) {
         var pcc = "." + (i + 1).toString() + "-pc";
@@ -152,6 +171,8 @@ function renderPage() {
         pcv = pct[i][4].toString() + '%';
         $(pcc).css('width', pcv);
     }
+
+    $('html, body').animate({ scrollTop: 0 }, 'slow');
 }
 
 function print(obj) {
@@ -187,7 +208,7 @@ function generateRow(name, desc, link, pc, p1, p2, p3, a) {
             <div class="col-md-4">
                 <div class="card">
                     <h5 class="card-title">` + name + `</h5>
-                    <p class="card-text">` + desc + `</p>
+                    <a href="` + link + `" class="card-text">` + desc + `</a>
                 </div>
             </div>
             <div class="col-md-8 progress-container">
