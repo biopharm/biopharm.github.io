@@ -131,7 +131,7 @@ function renderPage() {
     }
 
 
-    document.getElementById("indcount").innerHTML = "Find the latest developments in biopharmaceuticals. Tracking " + keys.length + " indications.";
+    //document.getElementById("indcount").innerHTML = "Find the latest developments in biopharmaceuticals. Tracking " + keys.length + " indications.";
     document.getElementById("addto").innerHTML = "";
     var pn = "Current Page: " + (page + 1).toString();
     document.getElementById("pagen").innerHTML = pn;
