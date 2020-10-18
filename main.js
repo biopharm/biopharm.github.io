@@ -143,11 +143,11 @@ function renderPage() {
         generateRow(keys[i], tmp[1], tmp[2], tmp[3], tmp[4], tmp[5], tmp[6], tmp[7]);
     }
 
-    // document.getElementById("1v").innerHTML = vals[0];
-    // document.getElementById("2v").innerHTML = vals[1];
-    // document.getElementById("3v").innerHTML = vals[2];
-    // document.getElementById("4v").innerHTML = vals[3];
-    // document.getElementById("5v").innerHTML = vals[4];
+    document.getElementById("1v").innerHTML = vals[0];
+    document.getElementById("2v").innerHTML = vals[1];
+    document.getElementById("3v").innerHTML = vals[2];
+    document.getElementById("4v").innerHTML = vals[3];
+    document.getElementById("5v").innerHTML = vals[4];
  
     for (var i = 0; i < pct.length; i++) {
         var pcc = "." + (i + 1).toString() + "-pc";
