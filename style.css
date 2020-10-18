@@ -55,32 +55,54 @@
     border: 0 !important;
 }
 
+
+
 #pccard {
     border: none;
     height: 7px;
-    background-color: #dc3545;
+    background-color: #9F7CEC;
+}
+
+.bg-pc {
+    background-color: #9F7CEC !important;
 }
 
 #p1card {
     border: none;
     height: 7px;
-    background-color: #ffc107;
+    background-color: #F25F5C;
+}
+
+.bg-p1 {
+    background-color: #F25F5C !important;
 }
 
 #p2card {
     border: none;
     height: 7px;
-    background-color: #17a2b8;
+    background-color: #FDA372;
+}
+
+.bg-p2 {
+    background-color: #FDA372 !important;
 }
 
 #p3card {
     border: none;
     height: 7px;
-    background-color: #007bff;
+    background-color: #F8CE6A;
+}
+
+.bg-p3 {
+    background-color: #F8CE6A !important;
 }
 
 #acard {
     border: none;
     height: 7px;
-    background-color: #28a745;
+    background-color: #4ECBB5;
+}
+
+.bg-a {
+    background-color: #4ECBB5 !important;
 }

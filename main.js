@@ -112,6 +112,7 @@ $(document).ready(function () {
 
 document.getElementById("indsearch").addEventListener("keydown", function (e) {
     if (e.key == 'Enter') {
+        page = 0;
         renderPage();
     }
 });
@@ -218,11 +219,11 @@ function generateRow(name, desc, link, pc, p1, p2, p3, a) {
             </div>
             <div class="col-md-8 progress-container">
                 <div class="progress active" style="height: 30px; font-size: 1em; font-weight: bold">
-                    <div class="progress-bar bg-danger ` + pct.length + `-pc" style="width:0%">` + pc + `</div>
-                    <div class="progress-bar bg-warning ` + pct.length + `-p1" style="width:0%">` + p1 + `</div>
-                    <div class="progress-bar bg-info ` + pct.length + `-p2" style="width:0%">` + p2 + `</div>
-                    <div class="progress-bar bg-standard ` + pct.length + `-p3" style="width:0%">` + p3 + `</div>
-                    <div class="progress-bar bg-success ` + pct.length + `-a" style="width:0%">` + a + `</div>
+                    <div class="progress-bar bg-pc ` + pct.length + `-pc" style="width:0%">` + pc + `</div>
+                    <div class="progress-bar bg-p1 ` + pct.length + `-p1" style="width:0%">` + p1 + `</div>
+                    <div class="progress-bar bg-p2 ` + pct.length + `-p2" style="width:0%">` + p2 + `</div>
+                    <div class="progress-bar bg-p3 ` + pct.length + `-p3" style="width:0%">` + p3 + `</div>
+                    <div class="progress-bar bg-a ` + pct.length + `-a" style="width:0%">` + a + `</div>
                 </div>
             </div>
         </div>
