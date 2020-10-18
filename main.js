@@ -64,15 +64,21 @@ function nextPage() {
     if (page >= Math.floor(keys.length / 40) ) {
         page = Math.floor(keys.length / 40);
     }
+    else {
+        renderPage();
+    }
 
-    renderPage();
+    
 }
 
 function prevPage() {
     page --;
-    page = Math.max(page, 0);
-
-    renderPage();
+    if (page < 0) {
+        page = 0;
+    }
+    else {
+        renderPage();
+    }
 }
 
 $(document).ready(function () {
@@ -135,8 +141,7 @@ function renderPage() {
         
         for (var j = 7; j > 2; j--) {
             if (tmp[j] > 0) {
-                vals[j - 3]++;
-                continue;
+                vals[j - 3] += tmp[j];
             }
         }
 

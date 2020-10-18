@@ -28436,7 +28436,7 @@ var data = `[
     "name": "PH94B", 
     "company": "VistaGen Therapeutics Inc.", 
     "newslink": "https://ir.vistagen.com/press-releases/detail/139", 
-    "indication": " COVID-19 ", 
+    "indication": "COVID-19", 
     "stage": "phase2a"
   }, 
   {
