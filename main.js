@@ -83,6 +83,14 @@ function prevPage() {
 
 $(document).ready(function () {
     for (var i = 0; i < info.length; i++) {
+        while (info[i].indication.charAt(0) == ' ') {
+            info[i].indication = info[i].indication.substring(1);
+        }
+
+        while (info[i].indication.charAt(info[i].indication.length - 1) == ' ') {
+            info[i].indication = info[i].indication.substring(0, info[i].indication.length - 1);
+        }
+
         if (!searched[info[i].indication]) {
             full.push(info[i].indication);
             searched[info[i].indication] = true;
@@ -149,11 +157,34 @@ function renderPage() {
         generateRow(keys[i], tmp[1], tmp[2], tmp[3], tmp[4], tmp[5], tmp[6], tmp[7]);
     }
 
-    document.getElementById("1v").innerHTML = vals[0];
-    document.getElementById("2v").innerHTML = vals[1];
-    document.getElementById("3v").innerHTML = vals[2];
-    document.getElementById("4v").innerHTML = vals[3];
-    document.getElementById("5v").innerHTML = vals[4];
+    if (document.getElementById("indsearch").value == "" || document.getElementById("indsearch").value == " ") {
+        document.getElementById("1v").innerHTML = "";
+        document.getElementById("2v").innerHTML = "";
+        document.getElementById("3v").innerHTML = "";
+        document.getElementById("4v").innerHTML = "";
+        document.getElementById("5v").innerHTML = "";
+
+        var all = document.getElementsByClassName("tot");
+
+        for (var i = 0; i < all.length; i++) {
+            all[i].innerHTML = "";
+        }
+    }
+    else {
+        document.getElementById("1v").innerHTML = vals[0];
+        document.getElementById("2v").innerHTML = vals[1];
+        document.getElementById("3v").innerHTML = vals[2];
+        document.getElementById("4v").innerHTML = vals[3];
+        document.getElementById("5v").innerHTML = vals[4];
+
+        var all = document.getElementsByClassName("tot");
+
+        for (var i = 0; i < all.length; i++) {
+            all[i].innerHTML = "Total";
+        }
+    }
+
+    
  
     for (var i = 0; i < pct.length; i++) {
         var pcc = "." + (i + 1).toString() + "-pc";
@@ -187,6 +218,20 @@ function print(obj) {
         obj.newslink + "'>" + obj.newstxt + "</a></td></tr>");
 }
 
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+
+var stylec = ["bg-pc", "bg-p1", "bg-p2", "bg-p3", "bg-a"];
+var ctext = ["Pre-clinical", "Phase 1 ", "Phase 2", "Phase 3", "Approved"];
+
+var cdesc = ["Pre-clinical: No vaccines/treatments under this category have begun human trials.",
+"Phase 1: The vaccines/treatments under this category have begun initial safety trials.",
+"Phase 2: The second phase includes testing in expanded safety trials.",
+"Phase 3: The vaccines/treatments in this category are undergoing large-scaling testing.",
+"Approved: Vaccines approved for general use which have passed the New Drug Application (NDA)"
+];
+
 function generateRow(name, desc, link, pc, p1, p2, p3, a) {
     var tot = pc + p1 + p2 + p3 + a;
 
@@ -206,6 +251,15 @@ function generateRow(name, desc, link, pc, p1, p2, p3, a) {
         a * 100.0 / tot
     ];
 
+    var ind = 0;
+
+    for (var i = 4; i > 0; i--) {
+        if (test[i] > 0) {
+            ind = i;
+            break;
+        }
+    }
+
     pct.push(test);
 
     var final = `
@@ -213,8 +267,12 @@ function generateRow(name, desc, link, pc, p1, p2, p3, a) {
     <div class="row">
             <div class="col-md-4">
                 <div class="card">
-                    <h5 class="card-title">` + name + `</h5>
+                    <h5 class="card-title"><a href="#" style="color: #000">` + name + ` ></a></h5>
+                    <button type="button" class="btn btn-sm ` + stylec[ind] + `" data-toggle="tooltip" data-placement="top" title="` + cdesc[ind] + `">
+                    ` + ctext[ind] + `
+                    </button>
                     <a href="` + link + `" class="card-text">` + desc + `</a>
+
                 </div>
             </div>
             <div class="col-md-8 progress-container">
@@ -230,6 +288,8 @@ function generateRow(name, desc, link, pc, p1, p2, p3, a) {
     `;
 
     document.getElementById("addto").innerHTML += final;
+
+    $('[data-toggle="tooltip"]').tooltip();
 }
 
 function filter() {

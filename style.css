@@ -65,6 +65,12 @@
     border: 0 !important;
 }
 
+.btn-sm {
+    margin-bottom: 0.5rem;
+    max-width: 5.5rem;
+    border-radius: 12px !important;
+    font-weight: 600 !important;
+}
 
 
 #pccard {
@@ -75,6 +81,7 @@
 
 .bg-pc {
     background-color: #9F7CEC !important;
+    color: #ffffff !important;
 }
 
 #p1card {
@@ -85,6 +92,7 @@
 
 .bg-p1 {
     background-color: #F25F5C !important;
+    color: #ffffff !important;
 }
 
 #p2card {
@@ -95,6 +103,7 @@
 
 .bg-p2 {
     background-color: #FDA372 !important;
+    color: #ffffff !important;
 }
 
 #p3card {
@@ -105,6 +114,7 @@
 
 .bg-p3 {
     background-color: #F8CE6A !important;
+    color: #ffffff !important;
 }
 
 #acard {
@@ -115,4 +125,5 @@
 
 .bg-a {
     background-color: #4ECBB5 !important;
+    color: #ffffff !important;
 }
