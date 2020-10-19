@@ -6,6 +6,54 @@ var data = `[
     "newslink": "https://www.businesswire.com/news/home/20200730005199/en/", 
     "indication": "COVID-19", 
     "stage": "phase3"
+  },
+  {
+    "newstxt": "FDA Approval announced December 30, 2019.", 
+    "name": "Lynparza (POLO)", 
+    "company": "Astrazeneca PLC", 
+    "newslink": "https://www.astrazeneca.com/media-centre/press-releases/2019/lynparza-approved-in-the-us-as-a-1st-line-maintenance-treatment-of-germline-brca-mutated-metastatic-pancreatic-cancer-30122019.html", 
+    "indication": "Pancreatic cancer", 
+    "stage": "approved"
+  },
+  {
+    "newstxt": "FDA approval announced April 23, 2019.", 
+    "name": "Risankizumab", 
+    "company": "AbbVie Inc.", 
+    "newslink": "https://news.abbvie.com/news/press-releases/abbvie-expands-immunology-portfolio-in-us-with-fda-approval-skyrizi-risankizumab-rzaa-for-moderate-to-severe-plaque-psoriasis.htm", 
+    "indication": "Psoriasis ", 
+    "stage": "approved"
+  },
+  {
+    "newstxt": "Phase 1 durability and translational data from patients with synovial sarcoma due at a medical conference 2H 2020.", 
+    "name": "MAGE-A4 (ADP-A2M4)", 
+    "company": "Adaptimmune Therapeutics plc", 
+    "newslink": "https://www.adaptimmune.com/investors-and-media/news-events/press-releases/detail/178/adaptimmune-reports-q2-financial-results-and-business-update", 
+    "indication": "Solid tumors", 
+    "stage": "phase1"
+  },
+  {
+    "newstxt": "Phase 1 enrolment to be terminated - noted December 17, 2019.", 
+    "name": "ADU-S100 and ipilimumab", 
+    "company": "Aduro Biotech Inc.", 
+    "newslink": "https://investors.aduro.com/node/10026/html", 
+    "indication": "Melanoma", 
+    "stage": "phase1"
+  }, 
+  {
+    "newstxt": "Phase 2 primary endpoint not met - noted April 2020.", 
+    "name": "Natalizumab - OPUS", 
+    "company": "Biogen Inc.", 
+    "newslink": "https://www.fool.com/earnings/call-transcripts/2020/04/22/biogen-inc-biib-q1-2020-earnings-call-transcript.aspx", 
+    "indication": "Epilepsy", 
+    "stage": "phase2"
+  },
+  {
+    "newstxt": "Rolling NDA to be completed mid-2020.", 
+    "name": "Oral Brincidofovir", 
+    "company": "Chimerix Inc.", 
+    "newslink": "https://ir.chimerix.com/news-releases/news-release-details/chimerix-receives-fda-clearance-rolling-submission-new-drug", 
+    "indication": "Smallpox", 
+    "stage": "ndaFiling"
   }, 
   {
     "newstxt": "Approval (third indication) announced October 3, 2017. ", 
@@ -142,14 +190,6 @@ var data = `[
     "newslink": "https://investors.abbvie.com/static-files/0f2e0201-ef33-432c-904e-8cf78d2d0929", 
     "indication": "Relapsed or refractory multiple myeloma", 
     "stage": "phase3"
-  }, 
-  {
-    "newstxt": "FDA approval announced April 23, 2019.", 
-    "name": "Risankizumab", 
-    "company": "AbbVie Inc.", 
-    "newslink": "https://news.abbvie.com/news/press-releases/abbvie-expands-immunology-portfolio-in-us-with-fda-approval-skyrizi-risankizumab-rzaa-for-moderate-to-severe-plaque-psoriasis.htm", 
-    "indication": "Psoriasis ", 
-    "stage": "approved"
   }, 
   {
     "newstxt": "Approval announced August 2, 2017.", 
@@ -879,14 +919,7 @@ var data = `[
     "indication": "Hypertriglyceridemia", 
     "stage": "phase3"
   }, 
-  {
-    "newstxt": "Phase 1 durability and translational data from patients with synovial sarcoma due at a medical conference 2H 2020.", 
-    "name": "MAGE-A4 (ADP-A2M4)", 
-    "company": "Adaptimmune Therapeutics plc", 
-    "newslink": "https://www.adaptimmune.com/investors-and-media/news-events/press-releases/detail/178/adaptimmune-reports-q2-financial-results-and-business-update", 
-    "indication": "Solid tumors", 
-    "stage": "phase1"
-  }, 
+
   {
     "newstxt": "Phase 1 presentation at ILC August 27-29, 2020.", 
     "name": "AFP (ADP-A2AFP) (ILC)", 
@@ -1046,15 +1079,7 @@ var data = `[
     "newslink": "https://investors.aduro.com/node/10026/html", 
     "indication": "Solid tumors or lymphomas", 
     "stage": "phase1b"
-  }, 
-  {
-    "newstxt": "Phase 1 enrolment to be terminated - noted December 17, 2019.", 
-    "name": "ADU-S100 and ipilimumab", 
-    "company": "Aduro Biotech Inc.", 
-    "newslink": "https://investors.aduro.com/node/10026/html", 
-    "indication": "Melanoma", 
-    "stage": "phase1"
-  }, 
+  },  
   {
     "newstxt": "Phase 1 data due 1H 2021 in IgA Nephropathy patients. ", 
     "name": "BION-1301", 
@@ -5080,14 +5105,6 @@ var data = `[
     "stage": "phase3"
   }, 
   {
-    "newstxt": "FDA Approval announced December 30, 2019.", 
-    "name": "Lynparza (POLO)", 
-    "company": "Astrazeneca PLC", 
-    "newslink": "https://www.astrazeneca.com/media-centre/press-releases/2019/lynparza-approved-in-the-us-as-a-1st-line-maintenance-treatment-of-germline-brca-mutated-metastatic-pancreatic-cancer-30122019.html", 
-    "indication": "Pancreatic cancer", 
-    "stage": "approved"
-  }, 
-  {
     "newstxt": "Phase 3 PFS data met primary endpoint. OS data due 2H 2021.", 
     "name": "Imfinzi + tremelimumab  (POSEIDON)", 
     "company": "Astrazeneca PLC", 
@@ -6238,15 +6255,7 @@ var data = `[
     "newslink": "https://investors.biogen.com/static-files/d2b15aa6-3dcf-4843-aa97-d29b74bb6113", 
     "indication": "Parkinson's disease", 
     "stage": "phase2"
-  }, 
-  {
-    "newstxt": "Phase 2 primary endpoint not met - noted April 2020.", 
-    "name": "Natalizumab - OPUS", 
-    "company": "Biogen Inc.", 
-    "newslink": "https://www.fool.com/earnings/call-transcripts/2020/04/22/biogen-inc-biib-q1-2020-earnings-call-transcript.aspx", 
-    "indication": "Epilepsy", 
-    "stage": "phase2"
-  }, 
+  },  
   {
     "newstxt": "Phase 3 data due by end of 2021.", 
     "name": "BIIB093", 
@@ -8614,14 +8623,6 @@ var data = `[
     "newslink": "https://ir.checkmatepharma.com/node/6551/html", 
     "indication": "Head and neck squamous cell carcinoma (HNSCC)", 
     "stage": "phase1"
-  }, 
-  {
-    "newstxt": "Rolling NDA to be completed mid-2020.", 
-    "name": "Oral Brincidofovir", 
-    "company": "Chimerix Inc.", 
-    "newslink": "https://ir.chimerix.com/news-releases/news-release-details/chimerix-receives-fda-clearance-rolling-submission-new-drug", 
-    "indication": "Smallpox", 
-    "stage": "ndaFiling"
   }, 
   {
     "newstxt": "Phase 2 trial discontinued - May 9, 2019.", 
