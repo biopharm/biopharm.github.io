@@ -211,7 +211,9 @@ function renderInd(name) {
     for (var i = 0; i < all.length; i++) {
         all[i].innerHTML = "Total";
     }
-
+    
+    $('[data-toggle="tooltip"]').tooltip()
+    $('html, body').animate({ scrollTop: 0 }, 'slow');
 }
 
 function renderPage() {
